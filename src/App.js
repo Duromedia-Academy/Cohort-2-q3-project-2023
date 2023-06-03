@@ -1,4 +1,4 @@
-import { About, Home } from "./containers";
+import { About, Downloads, Home } from "./containers";
 
 import { Header, Footer } from "./components";
 
