@@ -10,6 +10,9 @@ const Home = () => {
             <h1>welcom to my home page</h1>
             <h1>welcom to my home page</h1>
             <h1>welcom to my home page</h1>
+            <h1>welcom to my home page</h1>
+            <h1>welcom to my home page</h1>
+            <h1>welcom to my home page</h1>
         </div>
     );
 }
