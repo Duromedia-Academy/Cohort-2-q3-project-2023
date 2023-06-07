@@ -1,4 +1,4 @@
-const Downloads = () => {
+const Pricing = () => {
     return (
         <div>
             <h1>home</h1>
@@ -6,4 +6,4 @@ const Downloads = () => {
     );
 }
  
-export default Downloads;
+export default Pricing;
