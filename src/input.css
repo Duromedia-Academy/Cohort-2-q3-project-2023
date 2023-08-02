@@ -2,4 +2,20 @@
 @tailwind components;
 @tailwind utilities;                           
 
+.swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    background-color: white;
+    
+  }
+.swiper-pagination .swiper-pagination-bullet-active {
+    opacity: .4;
+    background-color:rgb(33, 205, 156);
+  }
 
+   
+    ol
+    {
+      @apply list-decimal
+    } 
+
+ 

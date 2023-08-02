@@ -9,9 +9,10 @@
     "framer-motion": "^10.12.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.9.0",
+    "react-icons": "^4.10.1",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "swiper": "^10.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -19,6 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "format": "prettier --write \"src/**/*.{js, jsx}\"",
     "create": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
   },
   "eslintConfig": {
@@ -40,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "prettier": "3.0.0",
     "tailwindcss": "^3.3.2"
   }
 }

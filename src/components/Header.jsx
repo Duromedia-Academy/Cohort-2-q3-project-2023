@@ -52,8 +52,8 @@ const Header = () => {
         <div className=''>
           <a href="/" className='text-2xl md:text-4xl'>teach:able</a>
         </div>
-        <div className=" hidden lg:block">
-    <ul className='flex items-center gap-5'>
+        <div className=" hidden lg:block z-10">
+      <ul className='flex items-center gap-5'>
 
   <div className="">
   <li>
