@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import {FaBars, FaCross, FaTimes} from "react-icons/fa";
+import {FaBars, FaTimes} from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri"
 import { Link } from 'react-router-dom'
 
