@@ -1,0 +1,45 @@
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #17355c;
+    background: #17355c;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-position: center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+  }
+
+  .swiper-button-prev {
+    background-image: url("../img/chevron-left-solid.svg");
+  }
+
+  .swiper-button-next {
+    background-image: url("../img/chevron-right-solid.svg");
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+  }
+
+  select{
+    -webkit-appearance: none;
+    background-image: url("../img/caret-down-solid.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 9%;
+    background-position-x: 83%;
+  }
+  select.small-screen{
+    -webkit-appearance: none;
+    background-image: url("../img/caret-down-solid.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 3%;
+    background-position-x: 95%;
+  }

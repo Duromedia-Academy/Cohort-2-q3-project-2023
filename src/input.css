@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;    
+
+.custom-prev-button {
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .custom-next-button {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+  }

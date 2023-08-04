@@ -5,10 +5,12 @@ import creativity from "../img/industry standard.jpg"
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+import { color } from "framer-motion";
 
 
 
-const Header = () => {
+const Header = ({ background, color }) => {
 
     const [navStates, setNavStates] = useState([false, false, false, false, false, false]);
 
@@ -55,23 +57,26 @@ const Header = () => {
     const contentEl4 = useRef();
     const contentEl5 = useRef();
     const contentEl6 = useRef();
+
+
     return (
         <div>
         {/*DESKTOP NAV */}
-        <div className="bg-[#c8e3d8] relative hidden md:block">
+        <div className={`${background} ${color} relative hidden md:block`}>
         <div className=" flex items-center justify-between gap-20 px-[5%] border-b border-black h-16">
             <div className=" flex gap-5 items-center">
                 <h1 className=" lg:text-[40px] font-semibold md:text-2xl">teach:able</h1>
             
             <div className="navs">
             <div className=" flex items-center font-semibold">
+
                 <div className=" cursor-pointer" onMouseEnter={() => toggleNav(0)} onMouseLeave={() => !toggleNav(0)}>
-                <p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline whitespace-nowrap">Blog home</p>
+                <Link to="/BlogHome"><p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline whitespace-nowrap">Blog home</p></Link>
                 
                 {navStates[0] &&
                 <div className="transition duration-500 ease-in">
                 <div className=" absolute w-full left-0 right-0 h-screen flex flex-col ">
-                <div className=" bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%] basis-1/2">
+                <div className=" bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%] basis-1/2 z-10">
                     <div className="">
                         <h1 className=" text-6xl font-medium">Blog Home</h1>
                     </div>
@@ -97,7 +102,7 @@ const Header = () => {
                     </div>
                     </div>
                 </div>
-                <div className=" bg-black bg-blend-overlay basis-1/2 opacity-20"  onMouseEnter={() => !toggleNav(0)}>
+                <div className="  z-10 bg-black bg-blend-overlay basis-1/2 opacity-50"  onMouseEnter={() => !toggleNav(0)}>
                     
                 </div>
                 </div>
@@ -105,12 +110,12 @@ const Header = () => {
                 </div>
 
                 <div className=" cursor-pointer" onMouseEnter={() => toggleNav(1)} onMouseLeave={() => !toggleNav(1)}>
-                <p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">Money</p>
+                <Link to="/Money"><p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">Money</p></Link>
                 
                 {navStates[1] &&
                 <div className="transition duration-500 ease-in">
                 <div className=" absolute w-full left-0 right-0 h-screen flex flex-col">
-                <div className=" bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%]">
+                <div className=" bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%] z-10">
                     <div className="">
                         <h1 className=" text-6xl font-medium">Money</h1>
                     </div>
@@ -136,7 +141,7 @@ const Header = () => {
                     </div>
                     </div>
                 </div>
-                <div className=" bg-black bg-blend-overlay basis-1/2 opacity-20"  onMouseEnter={() => !toggleNav(1)}>
+                <div className="  z-10 bg-black bg-blend-overlay basis-1/2 opacity-50"  onMouseEnter={() => !toggleNav(1)}>
                     
                 </div>
                 </div>
@@ -144,12 +149,12 @@ const Header = () => {
                 </div>
 
                 <div className=" cursor-pointer" onMouseEnter={() => toggleNav(2)} onMouseLeave={() => !toggleNav(2)}>
-                <p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">Creativity</p>
+                <Link to="/Creativity"><p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">Creativity</p></Link>
                 
                 {navStates[2] &&
                 <div className="transition duration-500 ease-in">
                 <div className=" absolute w-full left-0 right-0 h-screen flex flex-col">
-                <div className=" bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%]">
+                <div className=" z-10 bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%]">
                     <div className="">
                         <h1 className=" text-6xl font-medium">Creativity</h1>
                     </div>
@@ -175,7 +180,7 @@ const Header = () => {
                     </div>
                     </div>
                 </div>
-                <div className=" bg-black bg-blend-overlay basis-1/2 opacity-20"  onMouseEnter={() => !toggleNav(2)}>
+                <div className=" z-10 bg-black bg-blend-overlay basis-1/2 opacity-50"  onMouseEnter={() => !toggleNav(2)}>
                     
                 </div>
                 </div>
@@ -183,12 +188,12 @@ const Header = () => {
                 </div>
 
                 <div className=" cursor-pointer" onMouseEnter={() => toggleNav(3)} onMouseLeave={() => !toggleNav(3)}>
-                <p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">Mindset</p>
+                <Link to="/Mindset"><p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">Mindset</p></Link>
                 
                 {navStates[3] &&
                 <div className="transition duration-500 ease-in">
                 <div className=" absolute w-full left-0 right-0 h-screen flex flex-col">
-                <div className=" bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%]">
+                <div className=" z-10 bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%]">
                     <div className="">
                         <h1 className=" text-6xl font-medium">Mindset</h1>
                     </div>
@@ -214,7 +219,7 @@ const Header = () => {
                     </div>
                     </div>
                 </div>
-                <div className=" bg-black bg-blend-overlay basis-1/2 opacity-20"  onMouseEnter={() => !toggleNav(3)}>
+                <div className="  z-10 bg-black bg-blend-overlay basis-1/2 opacity-50"  onMouseEnter={() => !toggleNav(3)}>
                     
                 </div>
                 </div>
@@ -222,12 +227,12 @@ const Header = () => {
                 </div>
 
                 <div className=" cursor-pointer" onMouseEnter={() => toggleNav(4)} onMouseLeave={() => !toggleNav(4)}>
-                <p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">Marketing</p>
+                <Link to="/Marketing"><p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">Marketing</p></Link>
                 
                 {navStates[4] &&
                 <div className="transition duration-500 ease-in">
                 <div className=" absolute w-full left-0 right-0 h-screen flex flex-col">
-                <div className=" bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%]">
+                <div className=" z-10 bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%]">
                     <div className="">
                         <h1 className=" text-6xl font-medium">Marketing</h1>
                     </div>
@@ -253,7 +258,7 @@ const Header = () => {
                     </div>
                     </div>
                 </div>
-                <div className=" bg-black bg-blend-overlay basis-1/2 opacity-20"  onMouseEnter={() => !toggleNav(4)}>
+                <div className="  z-10 bg-black bg-blend-overlay basis-1/2 opacity-50"  onMouseEnter={() => !toggleNav(4)}>
                     
                 </div>
                 </div>
@@ -261,12 +266,12 @@ const Header = () => {
                 </div>
 
                 <div className=" cursor-pointer" onMouseEnter={() => toggleNav(5)} onMouseLeave={() => !toggleNav(5)}>
-                <p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">News</p>
+                <Link to="/News"><p className="py-5 px-2 hover:bg-[#a5c9bb] hover:underline">News</p></Link>
                 
                 {navStates[5] &&
                 <div className="transition duration-500 ease-in">
                 <div className=" absolute w-full left-0 right-0 h-screen flex flex-col">
-                <div className=" bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%]">
+                <div className=" z-10 bg-[#1b4942] flex justify-between text-white px-[5%] py-[1.5%]">
                     <div className="">
                         <h1 className=" text-6xl font-medium">News</h1>
                     </div>
@@ -292,7 +297,7 @@ const Header = () => {
                     </div>
                     </div>
                 </div>
-                <div className=" bg-black bg-blend-overlay basis-1/2 opacity-20"  onMouseEnter={() => !toggleNav(5)}>
+                <div className=" z-10 bg-black bg-blend-overlay basis-1/2 opacity-50"  onMouseEnter={() => !toggleNav(5)}>
                     
                 </div>
                 </div>
@@ -341,9 +346,9 @@ const Header = () => {
         {/* MOBILE NAV */}
         <div className="md:hidden overflow-x-hidden fixed w-full border-b border-black z-10
         ">
-        <div className=" bg-[#c8e3d8] px-[5%]">
+        <div className={`${background} px-[5%]`}>
            <div className=" flex justify-between items-center">
-                <h1 className=" text-2xl">teach:able</h1>
+                <Link to="/"><h1 className=" text-2xl">teach:able</h1></Link>
                 <div className=" flex gap-5 items-center">
                     <div className=" text-2xl cursor-pointer" onClick={ () => setIsSearchClickedMobile(!isSearchClickedMobile)}>
                         <IoSearchOutline />
@@ -402,7 +407,7 @@ const Header = () => {
       className="w-full text-left py-2 px-4 flex items-center justify-between focus:outline-none text-white list-none"
       onClick={() => toggleAccordion(0)}
     >
-      <li className="text-xl">Blog home</li>
+      <Link to="/BlogHome"><li className="text-xl">Blog home</li></Link>
       <RiArrowDropDownLine  
         className={`arrow text-3xl ease-in-out duration-700 ${
           accordionStates[0] ? 'rotate-180' : ''
@@ -427,7 +432,7 @@ const Header = () => {
       className="w-full text-left py-2 px-4 flex items-center justify-between focus:outline-none list-none "
       onClick={() => toggleAccordion(1)}
     >
-      <li className=" text-xl">Money</li>
+      <Link to="/Money"><li className=" text-xl">Money</li></Link>
       <RiArrowDropDownLine
         className={`arrow text-3xl ease-in-out duration-700 ${
           accordionStates[1] ? 'rotate-180' : ''
@@ -458,7 +463,7 @@ const Header = () => {
       className="w-full text-left py-2 px-4 flex items-center justify-between focus:outline-none list-none"
       onClick={() => toggleAccordion(2)}
     >
-      <li className="text-xl">Creativity</li>
+      <Link to="/Creativity"><li className="text-xl">Creativity</li></Link>
       <RiArrowDropDownLine
         className={`arrow text-3xl ease-in-out duration-700 ${
           accordionStates[2] ? 'rotate-180' : ''
@@ -489,7 +494,7 @@ const Header = () => {
       className="w-full text-left py-2 px-4 flex items-center justify-between focus:outline-none list-none"
       onClick={() => toggleAccordion(3)}
     >
-      <li className="text-xl">Mindset</li>
+      <Link to="/Mindset"><li className="text-xl">Mindset</li></Link>
       <RiArrowDropDownLine
         className={`arrow text-3xl ease-in-out duration-700 ${
           accordionStates[3] ? 'rotate-180' : ''
@@ -519,7 +524,7 @@ const Header = () => {
       className="w-full text-left py-2 px-4 flex items-center justify-between focus:outline-none list-none"
       onClick={() => toggleAccordion(4)}
     >
-      <li className="text-xl">Marketing</li>
+      <Link to="/Marketing"><li className="text-xl">Marketing</li></Link>
       <RiArrowDropDownLine
         className={`arrow text-3xl ease-in-out duration-700 ${
           accordionStates[4] ? 'rotate-180' : ''
@@ -549,7 +554,7 @@ const Header = () => {
       className="w-full text-left py-2 px-4 flex items-center justify-between focus:outline-none list-none"
       onClick={() => toggleAccordion(5)}
     >
-      <li className="text-xl">News</li>
+      <Link to="/News"><li className="text-xl">News</li></Link>
       <RiArrowDropDownLine
         className={`arrow text-3xl ease-in-out duration-700 ${
           accordionStates[5] ? 'rotate-180' : ''
