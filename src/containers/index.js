@@ -4,6 +4,7 @@ export { default as About } from "./About/About";
 export { default as Pricing } from "./Pricing/Pricing";
 export { default as Blogs } from "./Blogs/Blogs";
 export { default as Examples } from "./Examples/Examples";
+export { default as BlogPosts } from "./BlogPosts/BlogPost";
 
 export { default as Generator } from "./Features/Generator/Generator";
 export { default as AllFeatures } from "./Features/AllFeatures/AllFeatures";

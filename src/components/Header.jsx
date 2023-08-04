@@ -92,7 +92,7 @@ const Header = () => {
     <li><Link to="/Pricing"  className='hover:text-goal'>Pricing</Link></li> 
     <li><Link to="/Blogs" className='hover:text-goal'>Blog</Link></li> 
     <li><Link to="/Examples" className='hover:text-goal'>Examples</Link></li> 
-
+     <li><Link to="/BlogPosts" className='hover:text-goal'>BlogPosts</Link></li> 
 
     <div className="">
   <li>

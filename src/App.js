@@ -1,4 +1,4 @@
-import { Home, Pricing, Blogs, Examples } from "./containers";
+import { Home, Pricing, Blogs, Examples,BlogPosts } from "./containers";
 import { Header, Footer } from "./components";
 import {
   Downloads,
@@ -38,7 +38,8 @@ function App() {
           <Route path="/Coaching" element={<Coaching />} />
           <Route path="/DigitalDownloads" element={<DigitalDownloads />} />
           <Route path="/OnlineCourses" element={<OnlineCourses />} />
-          <Route path="/TeachablePay" element={<TeachablePay />} /> */
+          <Route path="/TeachablePay" element={<TeachablePay />} /> 
+          <Route path="/BlogPosts" element={<BlogPosts/>} />
         </Routes>
       </div>
       <div>

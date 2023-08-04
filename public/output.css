@@ -695,8 +695,16 @@ video {
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
+}
+
+.h-\[100px\] {
+  height: 100px;
 }
 
 .h-\[200px\] {
@@ -709,6 +717,10 @@ video {
 
 .h-\[400px\] {
   height: 400px;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-\[520px\] {
@@ -1168,6 +1180,11 @@ video {
   border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.bg-\[\#e7edfc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 237 252 / var(--tw-bg-opacity));
+}
+
 .bg-badge {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 244 / var(--tw-bg-opacity));
@@ -1405,6 +1422,10 @@ video {
   padding-bottom: 5px;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1557,6 +1578,10 @@ video {
   text-align: center;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1627,6 +1652,10 @@ video {
 
 .text-\[2rem\] {
   font-size: 2rem;
+}
+
+.text-\[3\.1rem\] {
+  font-size: 3.1rem;
 }
 
 .text-lit {
@@ -1709,6 +1738,15 @@ video {
 
 .leading-\[3rem\] {
   line-height: 3rem;
+}
+
+.leading-\[4rem\] {
+  line-height: 4rem;
+}
+
+.text-\[\#395275\] {
+  --tw-text-opacity: 1;
+  color: rgb(57 82 117 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -1822,6 +1860,31 @@ video {
 
 ol {
   list-style-type: decimal;
+}
+
+.first-letter\:float-left::first-letter {
+  float: left;
+}
+
+.first-letter\:font-serif::first-letter {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.first-letter\:text-\[6rem\]::first-letter {
+  font-size: 6rem;
+}
+
+.first-letter\:leading-\[4rem\]::first-letter {
+  line-height: 4rem;
+}
+
+.first-letter\:text-gap::first-letter {
+  --tw-text-opacity: 1;
+  color: rgb(27 73 66 / var(--tw-text-opacity));
+}
+
+.first-letter\:first-line\:uppercase::first-line::first-letter {
+  text-transform: uppercase;
 }
 
 .marker\:max-w-\[520px\] *::marker {
@@ -2274,6 +2337,10 @@ ol {
     display: none;
   }
 
+  .lg\:h-\[1000px\] {
+    height: 1000px;
+  }
+
   .lg\:h-\[350px\] {
     height: 350px;
   }
@@ -2390,6 +2457,10 @@ ol {
     width: 780px;
   }
 
+  .lg\:w-\[900px\] {
+    width: 900px;
+  }
+
   .lg\:w-fit {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -2490,6 +2561,10 @@ ol {
 
   .lg\:max-w-\[600px\] {
     max-width: 600px;
+  }
+
+  .lg\:max-w-\[650px\] {
+    max-width: 650px;
   }
 
   .lg\:max-w-\[700px\] {
@@ -2954,6 +3029,14 @@ ol {
     line-height: 1;
   }
 
+  .lg\:text-\[1\.15rem\] {
+    font-size: 1.15rem;
+  }
+
+  .lg\:text-\[1\.1rem\] {
+    font-size: 1.1rem;
+  }
+
   .lg\:text-\[1\.2rem\] {
     font-size: 1.2rem;
   }
@@ -3024,12 +3107,20 @@ ol {
     font-weight: 400;
   }
 
+  .lg\:leading-10 {
+    line-height: 2.5rem;
+  }
+
   .lg\:leading-\[3\.2rem\] {
     line-height: 3.2rem;
   }
 
   .lg\:leading-\[3\.5rem\] {
     line-height: 3.5rem;
+  }
+
+  .lg\:leading-\[4\.5rem\] {
+    line-height: 4.5rem;
   }
 
   .lg\:leading-\[4rem\] {
@@ -3051,6 +3142,14 @@ ol {
 
   .lg\:underline-offset-\[6px\] {
     text-underline-offset: 6px;
+  }
+
+  .lg\:first-letter\:text-\[8rem\]::first-letter {
+    font-size: 8rem;
+  }
+
+  .lg\:first-letter\:leading-\[6rem\]::first-letter {
+    line-height: 6rem;
   }
 
   .lg\:hover\:bg-black:hover {
