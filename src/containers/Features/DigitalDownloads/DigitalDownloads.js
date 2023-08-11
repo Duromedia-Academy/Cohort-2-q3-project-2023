@@ -347,7 +347,9 @@ Plus, you can use digital downloads as order bumps, bundles, and upsells to have
 
       <button className='bg-[#363636] px-[20px] py-[10px] flex justify-center m-0 w-auto my-0 mx-auto text-center text-white rounded-lg '>join for free</button>
     </div>
-
+     <div>
+    
+     </div>
 
     </div>
   );
